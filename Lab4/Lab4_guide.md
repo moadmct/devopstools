@@ -158,4 +158,6 @@ helm upgrade --install cert-manager jetstack/cert-manager  --namespace cert-mana
 1. Create the credentials of kubernetes in Jenkins
 Run in kubernetes master node :
 > kubectl describe secret mysecretname -n webapps
-2. Copy the secret and paste it in Jeknins as 'kube-key'
+1. Copy the secret and paste it in Jeknins as 'kube-key'
+1. Update the jenkins CI/CD pipeline using the file:
+> cicd2.yml
