@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  rancher-server:
+    image: rancher/rancher:latest
+    container_name: rancher-server
+    restart: unless-stopped
+    ports:
+      - 8083:80
+      - 8443:443
+    volumes:
+      - ./volume:/var/lib/rancher
+    privileged: true
