@@ -40,7 +40,7 @@
 
 ### Configurer Jenkins
 1. Réinitaliser le mot de passe admin
-2. Installer les plugins
+2. Installer les plugins (jdk - maven - docker -sonarqube - kubernetes - nodjs)
     1. Eclipse Temurin installer
     1. Javadoc
     1. JSch dependency	 
