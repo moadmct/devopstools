@@ -28,9 +28,9 @@ Utiliser la commande suivante :
     >***docker swarm join --token SWMTKN-1-4foj.....***
 4. Va dans chaque VM et coller la chaine pour faire joindre la machine au cluster.
 5. Vérifier en utilisant :
-    >docker nods ls
+    >docker node ls
 6. Maintenant on va créer un service **Nginx** pour tester :
-    > create a service = docker service create --name webapp1 --replicas=3 nginx
+    >docker service create --name webapp1 --replicas=3 nginx
 
 7. Installer un le visualizateur web (https://github.com/dockersamples/docker-swarm-visualizer) pour voir le résultant en mode graphique :
     > docker run -it -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer

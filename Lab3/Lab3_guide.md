@@ -12,13 +12,18 @@
 1. Via le navigateur accèder à : 
 >http://172.x.x.x:9000
 
-2. Changer le mot de passe admin.
+2. Changer le mot de passe admin (admin/admin).
 
 ## Configurer Nexus
 1. Via le navigateur accèder à : 
 >http://172.x.x.x:8081
 
-2. Changer le mot de passe admin.
+2. Vous pouvez obtenir le mot de pass temporaire en utilisant la commande :
+>docker exec -it nexus_nexus_1 /bin/bash
+>
+>cat /nexus-data/admin.password
+
+3. Changer le mot de passe admin. 
 
 ## Créer une application de test 
 1. Cloner l'application à partir : 
@@ -36,10 +41,36 @@
 ### Configurer Jenkins
 1. Réinitaliser le mot de passe admin
 2. Installer les plugins
-3. Configurer les outils
-4. Configurer le système
-5. Créer un onfiguration Global-Settings
-6. Création des credentials (Github - Dockerhub - Sonarqube)
+    1. Eclipse Temurin installer
+    1. Javadoc
+    1. JSch dependency	 
+    1. Maven Integration	 
+    1. Pipeline Maven Plugin API	 
+    1. Config File Provider	 
+    1. Pipeline Maven Integration	 
+    1. Pipeline Maven Plugin API	 
+    1. SonarQube Scanner	 
+    1. Cloud Statistics	 
+    1. Authentication Tokens API	 
+    1. Docker Commons	 
+    1. Apache HttpComponents Client 5.x API	 
+    1. Docker API	 
+    1. Docker	 
+    1. docker-build-step	 
+    1. Kubernetes Client API	 
+    1. Kubernetes Credentials	 
+    1. Kubernetes	 
+    1. Kubernetes Credentials Provider
+    
+1. Configurer les outils
+    1. jdk17
+    1. maven3
+    1. sonar-scanner
+    1. docker
+1. Création des credentials (Github - Dockerhub - Sonarqube)
+1. Configurer le système
+    1. sonar > http://localhost:900 
+1. Créer un onfiguration Global-Settings
 
 ### Création de Pipeline CI/CD
 1. Créer une nouvelle Pipeline CI/CD sous Jenkins 'cicd_app1'
