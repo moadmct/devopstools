@@ -10,13 +10,13 @@
 
 ## Configurer Sonarqube
 1. Via le navigateur accèder à : 
->http://172.x.x.x:9000
+>http://localhost:9001
 
 2. Changer le mot de passe admin (admin/admin).
 
 ## Configurer Nexus
 1. Via le navigateur accèder à : 
->http://172.x.x.x:8081
+>http://localhost:8081
 
 2. Vous pouvez obtenir le mot de pass temporaire en utilisant la commande :
 >docker exec -it nexus_nexus_1 /bin/bash
